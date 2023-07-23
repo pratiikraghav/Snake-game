@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("bg.jpg");
+    background-size: 100vw 100vh;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.board {
+    display: grid;
+    height: 79vh;
+    width: 44vw;
+    background: linear-gradient(#508b50, yellow);
+    grid-template-rows: repeat(19, 1fr);
+    grid-template-columns: repeat(19, 1fr);
+}
+
+.sizing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#start {
+    padding: 39px;
+    border-radius: 10px;
+    background-color: #3cb674;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+}
+
+#stop {
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    padding: 39px;
+    border-radius: 10px;
+    background-color: #3cb674;
+
+}
+#score{
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+}
+
+.head {
+    background-color: rgb(26, 149, 77);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.snake {
+    background-color: rgb(5, 90, 27);
+
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.fud {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #3cb83c;
+    border-radius: 10px;
+}
